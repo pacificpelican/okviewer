@@ -17,18 +17,20 @@ class SpreadsheetObjectbrowser extends Component {
   }
 
   render(props) {
-    let typ = typeof this.props.dbdataArr;
-    console.log(this.props.dbdataArr);
-    console.log("type: " + typ);
+    // let typ = typeof this.props.dbdataArr;
+    // console.log(this.props.dbdataArr);
+    // console.log("type: " + typ);
 
     var g = [{ example: "not found" }];
 
-    if (!this.props.dbdataArr[0]) {
-      console.log("dbDataArr prop is undefined");
-      g = [{ example: "not found" }];
-    } else {
-      console.log("dbDataArr prop is not undefined");
-      g = JSON.parse(this.props.dbdataArr);
+    if (typeof this.props.dbdataArr !== 'undefined') {
+      if (typeof this.props.dbdataArr[0] === 'undefined') {
+        console.log("dbDataArr prop is undefined");
+        g = [{ example: "not found" }];
+      } else {
+        console.log("dbDataArr prop is not undefined");
+        g = JSON.parse(this.props.dbdataArr);
+      }
     }
 
     console.log("type: " + typeof g);
