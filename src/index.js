@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-import Objectbrowser from "./SpreadsheetObjectbrowser";
+import Objectbrowser from "./SpreadsheetCoreRecursive";
 
 export default class SpreadsheetObjectbrowser extends Component {
   render() {

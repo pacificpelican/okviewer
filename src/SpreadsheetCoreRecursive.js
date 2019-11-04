@@ -6,16 +6,21 @@ import React, { Component } from "react";
 class SpreadsheetCoreRecursive extends Component {
   render(props) {
     var g;
-    if (this.props.spreadsheetdata[0] !== undefined) {
-      g = [{}, ...this.props.spreadsheetdata];
-    } else {
-      g = [this.props.spreadsheetdata];
+    if (typeof this.props.spreadsheetdata !== 'undefined') {
+      if (typeof this.props.spreadsheetdata[0] !== 'undefined') {
+        g = [{}, ...this.props.spreadsheetdata];
+      } else {
+        g = [this.props.spreadsheetdata];
+      }
+    }
+    else {
+      g = [{'spreadsheetdata':'null'}];
     }
 
     return (
       <div id="desk" className="mlBench-content">
         <section id="keylibrary">
-          {g.map(function(interVal) {
+          {g.map(function (interVal) {
             let valArr = Object.keys(interVal);
             let retSet = [];
 
@@ -33,7 +38,7 @@ class SpreadsheetCoreRecursive extends Component {
           })}
         </section>
         <section id="datalibrary">
-          {g.map(function(interVal) {
+          {g.map(function (interVal) {
             let keyArr = Object.keys(interVal);
             let valArr = Object.values(interVal);
 
@@ -49,7 +54,7 @@ class SpreadsheetCoreRecursive extends Component {
                 );
               }
               if (i === keyArr.length - 1) {
-                retSet.push(<div key={i+keyArr[i]+valArr[i]+`headerDivider`} className="endDividerHead" />);
+                retSet.push(<div key={i + keyArr[i] + valArr[i] + `headerDivider`} className="endDividerHead" />);
               }
             }
 
@@ -68,7 +73,7 @@ class SpreadsheetCoreRecursive extends Component {
                 );
               }
               if (i === keyArr.length - 1) {
-                retSet.push(<div key={i+keyArr[i]+valArr[i]+`valDivider`} className="endDivider" />);
+                retSet.push(<div key={i + keyArr[i] + valArr[i] + `valDivider`} className="endDivider" />);
               }
             }
 
