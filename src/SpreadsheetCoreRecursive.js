@@ -74,8 +74,6 @@ class SpreadsheetCoreRecursive extends Component {
             margin-bottom: 0.2rem;
             line-height: 1.3;
             font-family: "Lato", "Roboto", "Segoe UI", Helvetica, sans-serif; 
-            width: calc(7vw + 10pt);
-            display: inline-block;
             padding-top: calc(0.1vw + 1pt);
             padding-left: calc(0.1vw + 1pt);
             padding-right: calc(0.1vw + 1pt);
@@ -88,8 +86,6 @@ class SpreadsheetCoreRecursive extends Component {
             margin-bottom: 0.6rem;
             line-height: 1.3;
             font-family: "Lato", "Roboto", "Segoe UI", Helvetica, sans-serif;
-            width: calc(7vw + 10pt);
-            display: inline-block;
             padding-top: calc(0.1vw + 1pt);
             padding-left: calc(0.1vw + 1pt);
             padding-right: calc(0.1vw + 1pt);
