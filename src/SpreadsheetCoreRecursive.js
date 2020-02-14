@@ -19,24 +19,7 @@ class SpreadsheetCoreRecursive extends Component {
 
     return (
       <div id="desk" className="mlBench-content">
-        <section id="keylibrary">
-          {g.map(function (interVal) {
-            let valArr = Object.keys(interVal);
-            let retSet = [];
-
-            for (let i = 0; i < valArr.length; i++) {
-              if (typeof valArr[i] === "object") {
-                //         do nothing
-              } else {
-                retSet.push(
-                  <span key={valArr[i]} className="valHeaderRow">
-                    {valArr[i] + " "}
-                  </span>
-                );
-              }
-            }
-          })}
-        </section>
+        
         <section id="datalibrary">
           {g.map(function (interVal) {
             let keyArr = Object.keys(interVal);
@@ -85,20 +68,32 @@ class SpreadsheetCoreRecursive extends Component {
             font-family: "Ubuntu Mono", "Inconsolata", "Hack", "Fira Code", Menlo, monospace;
           }
           span.valSheetRow {
-            background-color: lightgray;
-            margin-top: 12px;
+            background-color: #dae8e8;
+            margin-top: 2px;
             margin-right: 10px;
-            margin-bottom: 0.6rem;
+            margin-bottom: 0.2rem;
             line-height: 1.3;
             font-family: "Lato", "Roboto", "Segoe UI", Helvetica, sans-serif; 
+            width: calc(7vw + 10pt);
+            display: inline-block;
+            padding-top: calc(0.1vw + 1pt);
+            padding-left: calc(0.1vw + 1pt);
+            padding-right: calc(0.1vw + 1pt);
+            padding-bottom: calc(0.1vw + 1pt);
           }
           span.valHeaderRow {
-            background-color: lightblue;
-            margin-top: 12px;
+            background-color: #f0f5f5;
+            margin-top: 20px;
             margin-right: 10px;
             margin-bottom: 0.6rem;
             line-height: 1.3;
             font-family: "Lato", "Roboto", "Segoe UI", Helvetica, sans-serif;
+            width: calc(7vw + 10pt);
+            display: inline-block;
+            padding-top: calc(0.1vw + 1pt);
+            padding-left: calc(0.1vw + 1pt);
+            padding-right: calc(0.1vw + 1pt);
+            padding-bottom: calc(0.1vw + 1pt);
           }
         `}</style>
       </div>
