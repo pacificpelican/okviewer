@@ -2,7 +2,7 @@
 
 * OkConceptviewer can perform a function similar to that of `var_dump` in PHP: a way to show all of an object's properties on the screen quickly, usually in apps under development
 
-* The code is available [on NPM](https://www.npmjs.org/package/okconceptviewer)
+* The code is available [on NPM](https://www.npmjs.org/package/okconceptviewer) and [GitHub](https://github.com/pacificpelican/okviewer)
 
 * okconceptviewer can be imported as React component: 
 
