@@ -1,6 +1,6 @@
 {
   "name": "okconceptviewer",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "okconceptbrowser React component",
   "main": "lib/index.js",
   "module": "es/index.js",
