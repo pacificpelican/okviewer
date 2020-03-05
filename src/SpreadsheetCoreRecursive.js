@@ -67,18 +67,6 @@ class SpreadsheetCoreRecursive extends Component {
           .spread {
             font-family: "Ubuntu Mono", "Inconsolata", "Hack", "Fira Code", Menlo, monospace;
           }
-          span.valSheetRow {
-            background-color: #dae8e8;
-            margin-top: 2px;
-            margin-right: 10px;
-            margin-bottom: 0.2rem;
-            line-height: 1.3;
-            font-family: "Lato", "Roboto", "Segoe UI", Helvetica, sans-serif; 
-            padding-top: calc(0.1vw + 1pt);
-            padding-left: calc(0.1vw + 1pt);
-            padding-right: calc(0.1vw + 1pt);
-            padding-bottom: calc(0.1vw + 1pt);
-          }
           span.valHeaderRow {
             background-color: #f0f5f5;
             margin-top: 20px;
@@ -86,6 +74,18 @@ class SpreadsheetCoreRecursive extends Component {
             margin-bottom: 0.6rem;
             line-height: 1.3;
             font-family: "Lato", "Roboto", "Segoe UI", Helvetica, sans-serif;
+            padding-top: calc(0.1vw + 1pt);
+            padding-left: calc(0.1vw + 1pt);
+            padding-right: calc(0.1vw + 1pt);
+            padding-bottom: calc(0.1vw + 1pt);
+          }
+          span.valSheetRow {
+            background-color: #dae8e8;
+            margin-top: 2px;
+            margin-right: 10px;
+            margin-bottom: 0.2rem;
+            line-height: 1.7;
+            font-family: "Lato", "Roboto", "Segoe UI", Helvetica, sans-serif; 
             padding-top: calc(0.1vw + 1pt);
             padding-left: calc(0.1vw + 1pt);
             padding-right: calc(0.1vw + 1pt);
