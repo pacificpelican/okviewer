@@ -1,6 +1,6 @@
 # okconceptviewer
 
-* OkConceptviewer can perform a function similar to that of `var_dump` in PHP: a way to show all of an object's properties on the screen quickly, usually in apps under development
+* OkConceptviewer can perform a function similar to that of `var_dump` in PHP: a way to show all of an object's properties (and values) on the screen quickly, usually in apps under development
 
 * The code is available [on NPM](https://www.npmjs.org/package/okconceptviewer) and [GitHub](https://github.com/pacificpelican/okviewer)
 
@@ -14,7 +14,7 @@
 
 ![okcconcept0 logo with horse with sunglasses on](./okConcept0LogoMiniWhiteHorse.jpg)
 
-* A version of the SpreadsheetCoreRecursive component is used to dislay objects in the [OkConcept0 project](https://github.com/pacificpelican/okconcept0)
+* A version of the SpreadsheetCoreRecursive component is used to display objects in the [OkConcept0 project](https://github.com/pacificpelican/okconcept0)
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
 [npm]: https://www.npmjs.org/package/okconceptviewer
